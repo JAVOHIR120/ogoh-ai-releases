@@ -3,6 +3,9 @@
 Ogoh AI — Oʻzbekiston uchun firibgarlikdan himoya ilovasi (Android 8.0+).
 Bu yerda ilovaning har bir versiyasi APK fayl sifatida turadi.
 
+**Yuklab olish sahifasi:** https://javohir120.github.io/ogoh-ai-releases/ (QR va yoʻriqnoma bilan).
+**Doimiy APK havolasi:** https://github.com/JAVOHIR120/ogoh-ai-releases/releases/latest/download/ogoh-ai.apk
+
 ## Oʻrnatish
 1. [Releases](https://github.com/JAVOHIR120/ogoh-ai-releases/releases/latest) sahifasidan `ogoh-ai-<versiya>.apk` ni yuklab oling.
 2. Faylni oching. Android «Nomaʼlum manbalardan oʻrnatish»ga ruxsat soʻrasa, shu brauzer yoki fayl menejeri uchun ruxsat bering.
