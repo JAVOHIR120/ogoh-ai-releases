@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ogoh AI — Android ilovasini yuklab olish</title>
+<meta name="description" content="Ogoh AI: SMS, Telegram va qo‘ng‘iroqlardagi firibgarlikni aniqlaydigan ilova. Android 8.0+ uchun bepul.">
+<meta name="theme-color" content="#F2F3F7">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Ogoh AI">
+<meta property="og:title" content="Ogoh AI — firibgarlardan himoya">
+<meta property="og:description" content="SMS, Telegram va qo‘ng‘iroqlarni Ogoh o‘zi tekshiradi. Android ilovasini yuklab oling.">
+<meta property="og:image" content="https://javohir120.github.io/ogoh-ai-releases/og.png">
+<meta property="og:url" content="https://javohir120.github.io/ogoh-ai-releases/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#F2F3F7; --card:#FFFFFF; --ink:#16181D; --muted:#6B7083; --line:#E6E8EF;
+    --brand:#3352F5; --brand-ink:#2440D6; --brand-soft:#EEF1FE; --green:#10B981; --green-soft:#E6F7F0;
+    --radius:22px; --shadow:0 1px 2px rgba(22,24,29,.04), 0 8px 24px rgba(22,24,29,.06);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Onest,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+  body{min-height:100svh;display:flex;flex-direction:column}
+  a{color:var(--brand);text-decoration:none}
+  .wrap{width:100%;max-width:1040px;margin:0 auto;padding:0 20px}
+  header{padding:18px 0}
+  .bar{display:flex;align-items:center;justify-content:space-between}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px;letter-spacing:-.01em}
+  .brand img{width:34px;height:34px}
+  .lang{display:flex;background:#fff;border-radius:999px;padding:3px;box-shadow:var(--shadow)}
+  .lang button{appearance:none;border:0;background:transparent;font:inherit;font-weight:600;font-size:14px;color:var(--muted);padding:7px 14px;border-radius:999px;cursor:pointer}
+  .lang button[aria-pressed="true"]{background:var(--brand);color:#fff}
+  main{flex:1;display:grid;grid-template-columns:1fr;gap:20px;padding:12px 0 40px}
+  @media (min-width:900px){main{grid-template-columns:1.2fr .8fr;gap:28px;padding-top:28px}}
+  .card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:24px}
+  @media (max-width:400px){.card{padding:20px 18px}}
+  h1{font-size:34px;line-height:1.1;letter-spacing:-.02em;margin:0 0 10px;font-weight:800}
+  @media (min-width:600px){h1{font-size:44px}}
+  .lead{font-size:17px;line-height:1.5;color:var(--muted);margin:0 0 22px}
+  .btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;border-radius:18px;background:var(--brand);color:#fff;font-weight:700;font-size:clamp(15px,4.4vw,18px);letter-spacing:-.01em;padding:0 16px;transition:transform .08s ease,background .15s ease}
+  .btn:active{transform:scale(.985);background:var(--brand-ink)}
+  .btn svg{width:24px;height:24px;flex:none}
+  .meta{margin:12px 0 0;font-size:14px;color:var(--muted);text-align:center;min-height:20px}
+  .meta b{color:var(--ink);font-weight:600}
+  .links{display:flex;justify-content:center;gap:18px;margin-top:10px;font-size:14px;font-weight:600}
+  .steps{list-style:none;margin:0;padding:0}
+  .steps li{display:flex;gap:14px;padding:14px 0;border-top:1px solid var(--line)}
+  .steps li:first-child{border-top:0;padding-top:4px}
+  .num{flex:none;width:32px;height:32px;border-radius:50%;background:var(--brand-soft);color:var(--brand);font-weight:700;display:grid;place-items:center;font-size:15px}
+  .steps b{display:block;font-weight:700;margin-bottom:2px}
+  .steps p{margin:0;color:var(--muted);font-size:15px;line-height:1.45}
+  .note{display:flex;gap:12px;align-items:flex-start;background:var(--green-soft);border-radius:16px;padding:14px 16px;margin-top:16px;font-size:14px;line-height:1.45;color:#0B6B4F}
+  .note svg{flex:none;width:20px;height:20px;margin-top:1px}
+  h2{font-size:18px;margin:0 0 12px;font-weight:700}
+  .qr{text-align:center}
+  .qr img{width:220px;height:220px;border-radius:16px;background:#fff;display:block;margin:6px auto 12px}
+  .qr p{margin:0;color:var(--muted);font-size:15px;line-height:1.45}
+  .side{display:flex;flex-direction:column;gap:20px}
+  .faq p{margin:0 0 10px;color:var(--muted);font-size:15px;line-height:1.5}
+  .faq p:last-child{margin:0}
+  .faq b{color:var(--ink);font-weight:600}
+  footer{padding:18px 0 28px;color:var(--muted);font-size:13px;display:flex;flex-wrap:wrap;gap:8px 18px;justify-content:center;text-align:center}
+  html[lang="uz"] .ru, html[lang="ru"] .uz{display:none !important}
+  @media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="wrap">
+  <div class="bar">
+    <div class="brand"><img src="mark.svg" alt="" width="34" height="34"> Ogoh AI</div>
+    <div class="lang" role="group" aria-label="Til / Язык">
+      <button type="button" data-lang="uz" aria-pressed="true">O‘zbekcha</button>
+      <button type="button" data-lang="ru" aria-pressed="false">Русский</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+  <section>
+    <div class="card">
+      <h1><span class="uz">Firibgarlardan bir qadam oldinda</span><span class="ru">На шаг впереди мошенников</span></h1>
+      <p class="lead">
+        <span class="uz">SMS, Telegram va qo‘ng‘iroqlarni Ogoh o‘zi tekshiradi. Bepul, Android 8.0 va undan yuqori.</span>
+        <span class="ru">Ogoh сам проверяет SMS, Telegram и звонки. Бесплатно, Android 8.0 и новее.</span>
+      </p>
+      <a class="btn" id="dl" href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases/latest/download/ogoh-ai.apk">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+        <span class="uz">Android uchun yuklab olish</span><span class="ru">Скачать для Android</span>
+      </a>
+      <p class="meta" id="meta"><span class="uz">Versiya <b>0.5.1</b> · 40 MB · APK</span><span class="ru">Версия <b>0.5.1</b> · 40 МБ · APK</span></p>
+      <div class="links">
+        <a href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases"><span class="uz">Barcha versiyalar</span><span class="ru">Все версии</span></a>
+        <a href="https://t.me/ogoh_ai_bot"><span class="uz">Telegram bot</span><span class="ru">Telegram-бот</span></a>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px">
+      <h2><span class="uz">Qanday o‘rnatiladi</span><span class="ru">Как установить</span></h2>
+      <ol class="steps">
+        <li><span class="num">1</span><div>
+          <b><span class="uz">Yuklab oling</span><span class="ru">Скачайте</span></b>
+          <p><span class="uz">Yuqoridagi tugmani bosing. Fayl «Yuklanmalar» papkasiga tushadi.</span><span class="ru">Нажмите кнопку выше. Файл появится в папке «Загрузки».</span></p>
+        </div></li>
+        <li><span class="num">2</span><div>
+          <b><span class="uz">Faylni oching va ruxsat bering</span><span class="ru">Откройте файл и разрешите установку</span></b>
+          <p><span class="uz">Android «Noma’lum ilovalarni o‘rnatish» ruxsatini so‘rasa, shu brauzer uchun yoqing va orqaga qayting.</span><span class="ru">Если Android попросит разрешить «установку неизвестных приложений», включите её для браузера и вернитесь назад.</span></p>
+        </div></li>
+        <li><span class="num">3</span><div>
+          <b><span class="uz">O‘rnating va oching</span><span class="ru">Установите и откройте</span></b>
+          <p><span class="uz">Keyingi yangilanishlar ilovaning o‘zida keladi: bildirishnoma chiqadi, bir bosishda o‘rnatiladi.</span><span class="ru">Следующие обновления приходят внутри приложения: уведомление и установка в одно касание.</span></p>
+        </div></li>
+      </ol>
+      <div class="note">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+        <div>
+          <span class="uz">Google Play Protect «App scan recommended» desa, «Scan app» ni bosing: tekshiruvdan so‘ng «Install» chiqadi. Bu Play’da bo‘lmagan har qanday ilova uchun odatiy.</span>
+          <span class="ru">Если Google Play Protect предложит «App scan recommended», нажмите «Scan app»: после проверки появится «Install». Это обычно для любого приложения вне Play.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside class="side">
+    <div class="card qr">
+      <h2><span class="uz">Telefoningizda oching</span><span class="ru">Откройте на телефоне</span></h2>
+      <img src="qr.png" alt="QR: javohir120.github.io/ogoh-ai-releases" width="220" height="220">
+      <p><span class="uz">Kamerani QR kodga tuting, havola shu sahifani ochadi.</span><span class="ru">Наведите камеру на QR-код, ссылка откроет эту страницу.</span></p>
+    </div>
+    <div class="card faq">
+      <h2><span class="uz">Savollar</span><span class="ru">Вопросы</span></h2>
+      <p><b><span class="uz">Nega Google Play’da emas?</span><span class="ru">Почему не в Google Play?</span></b><br>
+        <span class="uz">Ilova hozircha to‘g‘ridan-to‘g‘ri tarqatilmoqda. Yangilanishlar ilovaning o‘zida, Play’siz keladi.</span>
+        <span class="ru">Приложение пока распространяется напрямую. Обновления приходят внутри приложения, без Play.</span></p>
+      <p><b><span class="uz">Fayl asl ekanini qanday bilaman?</span><span class="ru">Как понять, что файл подлинный?</span></b><br>
+        <span class="uz">Faqat shu sahifa, <a href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases">GitHub Releases</a> yoki <a href="https://t.me/ogoh_ai_bot">@ogoh_ai_bot</a> bergan havoladan yuklang. Har bir versiyaning SHA‑256 xeshi <a href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases/latest/download/update.json">update.json</a> da.</span>
+        <span class="ru">Скачивайте только с этой страницы, из <a href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases">GitHub Releases</a> или по ссылке от <a href="https://t.me/ogoh_ai_bot">@ogoh_ai_bot</a>. SHA‑256 каждой версии — в <a href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases/latest/download/update.json">update.json</a>.</span></p>
+      <p><b><span class="uz">Qaysi telefonlarda ishlaydi?</span><span class="ru">На каких телефонах работает?</span></b><br>
+        <span class="uz">Android 8.0 va undan yuqori: Samsung, Xiaomi, Redmi, Tecno, Infinix, Honor, Vivo va boshqalar.</span>
+        <span class="ru">Android 8.0 и новее: Samsung, Xiaomi, Redmi, Tecno, Infinix, Honor, Vivo и другие.</span></p>
+    </div>
+  </aside>
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Ogoh AI</span>
+  <a href="https://t.me/ogoh_ai_bot">@ogoh_ai_bot</a>
+  <a href="https://ogoh-account.logistika-bot-relay.workers.dev/delete"><span class="uz">Hisobni o‘chirish</span><span class="ru">Удаление аккаунта</span></a>
+</footer>
+
+<script>
+  (function () {
+    var html = document.documentElement;
+    var saved = null;
+    try { saved = localStorage.getItem('ogoh-lang'); } catch (e) {}
+    var nav = (navigator.language || '').toLowerCase();
+    var lang = saved || (nav.indexOf('ru') === 0 ? 'ru' : 'uz');
+    function setLang(l) {
+      html.lang = l;
+      document.querySelectorAll('.lang button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === l)); });
+      try { localStorage.setItem('ogoh-lang', l); } catch (e) {}
+    }
+    setLang(lang);
+    document.querySelectorAll('.lang button').forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
+
+    // Live version, size and date from the latest GitHub release.
+    fetch('https://api.github.com/repos/JAVOHIR120/ogoh-ai-releases/releases/latest', { headers: { Accept: 'application/vnd.github+json' } })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (rel) {
+        if (!rel) return;
+        var apk = (rel.assets || []).filter(function (a) { return a.name === 'ogoh-ai.apk'; })[0] || (rel.assets || []).filter(function (a) { return /\.apk$/.test(a.name); })[0];
+        var version = (rel.tag_name || '').replace(/^v/, '');
+        var mb = apk ? Math.round(apk.size / 1048576) : null;
+        var d = rel.published_at ? new Date(rel.published_at) : null;
+        var MU = ['yanvar','fevral','mart','aprel','may','iyun','iyul','avgust','sentabr','oktabr','noyabr','dekabr'];
+        var MR = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
+        var dateUz = d ? d.getDate() + '-' + MU[d.getMonth()] + ' ' + d.getFullYear() : '';
+        var dateRu = d ? d.getDate() + ' ' + MR[d.getMonth()] + ' ' + d.getFullYear() : '';
+        var m = document.getElementById('meta');
+        m.innerHTML =
+          '<span class="uz">Versiya <b>' + version + '</b>' + (mb ? ' · ' + mb + ' MB' : '') + (dateUz ? ' · ' + dateUz : '') + '</span>' +
+          '<span class="ru">Версия <b>' + version + '</b>' + (mb ? ' · ' + mb + ' МБ' : '') + (dateRu ? ' · ' + dateRu : '') + '</span>';
+      })
+      .catch(function () {});
+  })();
+</script>
+</body>
+</html>

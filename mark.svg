@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Ogoh AI">
+  <!--
+    Ogoh AI mark "Signal O", 256-unit grid (design/logo_concepts, concept 3, chosen 2026-10-20).
+    Ring: r=84, stroke 32, open at the top right (294° arc from -12° to 282°, round caps).
+    Dot: r=24 at the centre. Echo: r=120, stroke 14, from -67° to -23° (centred on -45°).
+    One colour; the same geometry is drawn by ui/welcome/WelcomeScreen.kt and the vector drawables.
+  -->
+  <path d="M210.16,110.54 A84,84 0 1 1 145.46,45.84" fill="none" stroke="#3352F5" stroke-width="32" stroke-linecap="round"/>
+  <path d="M104,128 A24,24 0 1 0 152,128 A24,24 0 1 0 104,128 Z" fill="#3352F5"/>
+  <path d="M174.89,17.54 A120,120 0 0 1 238.46,81.11" fill="none" stroke="#3352F5" stroke-width="14" stroke-linecap="round"/>
+</svg>
