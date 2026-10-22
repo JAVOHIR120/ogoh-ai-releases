@@ -12,7 +12,7 @@ Bu yerda ilovaning har bir versiyasi APK fayl sifatida turadi.
 3. Oʻrnatilgach, ilova oʻzi yangilanishlarni tekshiradi: yangi versiya chiqqanda bildirishnoma keladi, Wi‑Fi'da oʻzi yuklab oladi va bir bosishda oʻrnatiladi.
 
 ## Yangilanish qanday ishlaydi
-Ilova `releases/latest/download/update.json` faylini oʻqiydi (versiya, APK manzili, SHA‑256). APK yuklangach, xeshi tekshiriladi, keyin Android'ning oʻz oʻrnatish oynasi chiqadi.
+Ilova `releases/latest/download/update.json` faylini oʻqiydi (versiya, APK manzili, SHA‑256). APK yuklangach, xeshi tekshiriladi, keyin Android'ning oʻz oʻrnatish oynasi chiqadi. 0.8.4 dan boshlab ilova faqat oʻzgargan qismini (patch, odatda bir necha MB) yuklab, yangi APK ni telefonning oʻzida yigʻadi; xeshi mos kelmasa, toʻliq APK yuklanadi.
 
 ## Установка (RU)
 Скачайте `ogoh-ai-<версия>.apk` со страницы [Releases](https://github.com/JAVOHIR120/ogoh-ai-releases/releases/latest), откройте файл и разрешите установку. Дальше приложение обновляется само.
