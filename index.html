@@ -518,8 +518,8 @@
             <div class="note" data-reveal style="--d:80ms">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg>
               <div>
-                <span class="uz">Google Play Protect «App scan recommended» desa, «Scan app» ni bosing: tekshiruvdan so‘ng «Install» chiqadi. Bu Play’da bo‘lmagan har qanday ilova uchun odatiy.</span>
-                <span class="ru">Если Google Play Protect предложит «App scan recommended», нажмите «Scan app»: после проверки появится «Install». Это обычно для любого приложения вне Play.</span>
+                <span class="uz">Google Play Protect «App scan recommended» desa, «Scan app» ni bosing: tekshiruvdan so‘ng «Install» chiqadi. Bu Play’da bo‘lmagan har qanday ilova uchun odatiy. Boshqa xabar chiqsa, <a href="#fix-install">o‘rnatishdagi muammolar</a>ga qarang.</span>
+                <span class="ru">Если Google Play Protect предложит «App scan recommended», нажмите «Scan app»: после проверки появится «Install». Это обычно для любого приложения вне Play. Если появилось другое сообщение, смотрите <a href="#fix-install">проблемы с установкой</a>.</span>
               </div>
             </div>
           </div>
@@ -539,6 +539,37 @@
           <h2><span class="uz">Ko‘p so‘raladi</span><span class="ru">Частые вопросы</span></h2>
         </div>
         <div class="faq">
+          <details class="card" id="fix-install" data-reveal>
+            <summary><span><span class="uz">«Paketni tahlil qilishda muammo yuz berdi» chiqdi</span><span class="ru">Пишет «Ошибка при синтаксическом анализе пакета»</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <div class="ans">
+              <span class="uz">Fayl oxirigacha yuklanmagan yoki fayl menejeridan ochilgan. Yuklash tugashini kuting (hajmi yuklab olish tugmasi ostida yozilgan), keyin faylni brauzerning «Yuklanmalar» bo‘limidan oching. Yana chiqsa, eski faylni o‘chirib, qaytadan yuklab oling. Telefonda Android 8.0 dan eski versiya bo‘lsa ham shu xabar chiqadi.</span>
+              <span class="ru">Файл скачался не до конца или открыт из файлового менеджера. Дождитесь конца загрузки (размер указан под кнопкой скачивания) и откройте файл из «Загрузок» браузера. Если ошибка повторилась, удалите старый файл и скачайте заново. То же сообщение появляется на Android старше 8.0.</span>
+            </div>
+          </details>
+          <details class="card" data-reveal style="--d:40ms">
+            <summary><span><span class="uz">Play Protect yoki telefon «xavfli» deb to‘xtatdi</span><span class="ru">Play Protect или телефон остановил установку как «опасную»</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <div class="ans">
+              <span class="uz">Ogoh SMS, qo‘ng‘iroq va boshqa ilovalarni tekshiradi. Play’da bo‘lmagan bunday ilovani tizim ehtiyot uchun to‘xtatadi. Ogohni faqat shu sahifadan yuklagan bo‘lsangiz:
+                <br>• Play Protect: «Batafsil» → <span style="white-space:nowrap">«Baribir o‘rnatish»</span>.
+                <br>• Xiaomi, Redmi, POCO: xavfsizlik tekshiruvi tugashini kuting → <span style="white-space:nowrap">«Baribir o‘rnatish»</span>.
+                <br>• Samsung: sozlamalar qidiruviga <span style="white-space:nowrap">«Auto Blocker»</span> yozing, o‘rnatish vaqtida o‘chirib turing va keyin qayta yoqing.
+                <br>• Honor, Huawei: sozlamalar qidiruviga <span style="white-space:nowrap">«Pure mode»</span> yozing, o‘rnatish vaqtida o‘chirib turing.
+                <br>Boshqa joydan olingan faylni hech qachon bunday o‘rnatmang. Tugma chiqmasa, <a href="https://t.me/ogoh_ai_bot">@ogoh_ai_bot</a> ga yozing.</span>
+              <span class="ru">Ogoh проверяет SMS, звонки и другие приложения, поэтому система осторожно останавливает такое приложение не из Play. Если вы скачали Ogoh с этой страницы:
+                <br>• Play Protect: «Подробнее» → <span style="white-space:nowrap">«Всё равно установить»</span>.
+                <br>• Xiaomi, Redmi, POCO: дождитесь конца проверки безопасности → <span style="white-space:nowrap">«Всё равно установить»</span>.
+                <br>• Samsung: найдите в настройках <span style="white-space:nowrap">«Auto Blocker»</span>, выключите на время установки и включите снова.
+                <br>• Honor, Huawei: найдите в настройках <span style="white-space:nowrap">«Pure mode»</span>, выключите на время установки.
+                <br>Никогда не устанавливайте так файлы из других мест. Если кнопки нет, напишите <a href="https://t.me/ogoh_ai_bot">@ogoh_ai_bot</a>.</span>
+            </div>
+          </details>
+          <details class="card" data-reveal style="--d:80ms">
+            <summary><span><span class="uz">Himoyani yoqib bo‘lmayapti: «Cheklangan sozlama»</span><span class="ru">Не включается защита: «Ограниченная настройка»</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <div class="ans">
+              <span class="uz">Android 13 va yangilarida brauzerdan o‘rnatilgan ilova «Maxsus imkoniyatlar» va bildirishnomalarni o‘qish ruxsatini darhol ololmaydi. Sozlamalar → Ilovalar → Ogoh AI → yuqoridagi ⋮ → «Cheklangan sozlamalarga ruxsat berish». Keyin Ogohga qaytib, himoyani yoqing.</span>
+              <span class="ru">На Android 13 и новее приложение, установленное из браузера, не сразу получает доступ к «Спец. возможностям» и уведомлениям. Настройки → Приложения → Ogoh AI → ⋮ вверху → «Разрешить ограниченные настройки». Затем вернитесь в Ogoh и включите защиту.</span>
+            </div>
+          </details>
           <details class="card" data-reveal>
             <summary><span><span class="uz">Pullikmi?</span><span class="ru">Это платно?</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
             <div class="ans"><span class="uz">Ogoh bepul. Oila tarifi tez orada qo‘shiladi, to‘lov Click va Payme orqali.</span><span class="ru">Ogoh бесплатен. Семейный тариф скоро появится, оплата через Click и Payme.</span></div>
@@ -685,7 +716,9 @@
       if (!rel) return;
       var apk = (rel.assets || []).filter(function (a) { return a.name === 'ogoh-ai.apk'; })[0] || (rel.assets || []).filter(function (a) { return /\.apk$/.test(a.name); })[0];
       var version = (rel.tag_name || '').replace(/^v/, '');
-      var mb = apk ? Math.round(apk.size / 1048576) : null;
+      // Decimal megabytes with one decimal, as Android's file manager shows them (43 649 618 bytes → "43,6 MB"),
+      // so a user can tell a finished download from a broken one.
+      var mb = apk ? (Math.round(apk.size / 1e5) / 10).toString().replace('.', ',') : null;
       var d = rel.published_at ? new Date(rel.published_at) : null;
       var MU = ['yanvar','fevral','mart','aprel','may','iyun','iyul','avgust','sentabr','oktabr','noyabr','dekabr'];
       var MR = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
