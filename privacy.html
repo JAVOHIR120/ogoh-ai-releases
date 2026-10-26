@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ogoh AI — Maxfiylik siyosati</title>
+<meta name="description" content="Ogoh AI qaysi maʼlumotlardan qanday foydalanadi: SMS, Telegram, qoʻngʻiroq, ilovalar va fayllar.">
+<meta name="theme-color" content="#F2F3F7">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#F2F3F7;--card:#FFFFFF;--ink:#16181D;--muted:#6B7083;--line:#E6E8EF;--brand:#3352F5;--brand-soft:#EEF1FE;
+    --gutter:clamp(16px,4.5vw,40px)}
+  *{box-sizing:border-box}
+  html,body{margin:0;background:var(--bg);color:var(--ink);font-family:Onest,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    -webkit-font-smoothing:antialiased;line-height:1.6}
+  a{color:var(--brand)}
+  .wrap{max-width:760px;margin:0 auto;padding:28px var(--gutter) 64px}
+  header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:24px}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+  .brand img{width:32px;height:32px;border-radius:9px}
+  .langs{display:flex;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px}
+  .langs button{font:inherit;font-size:14px;font-weight:600;border:0;background:none;color:var(--muted);padding:6px 14px;
+    border-radius:999px;cursor:pointer}
+  .langs button[aria-pressed="true"]{background:var(--brand);color:#fff}
+  article{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:clamp(20px,4vw,36px)}
+  h1{font-size:clamp(26px,5vw,34px);line-height:1.2;margin:0 0 6px}
+  .date{color:var(--muted);font-size:14px;margin:0 0 24px}
+  h2{font-size:18px;margin:28px 0 8px}
+  p,li{font-size:16px}
+  ul{padding-left:20px;margin:8px 0}
+  li{margin:6px 0}
+  .lead{background:var(--brand-soft);border-radius:14px;padding:14px 16px;margin:0 0 8px}
+  [data-lang]{display:none}
+  [data-lang].on{display:block}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="./"><img src="icon-192.png" alt="">Ogoh AI</a>
+    <nav class="langs" aria-label="Til / Язык / Language">
+      <button type="button" data-set="uz">Oʻzbekcha</button>
+      <button type="button" data-set="ru">Русский</button>
+      <button type="button" data-set="en">English</button>
+    </nav>
+  </header>
+
+  <article data-lang="uz" lang="uz">
+    <h1>Maxfiylik siyosati</h1>
+    <p class="date">Kuchga kirgan sana: 2026-yil 25-oktabr</p>
+    <p class="lead">Ogoh AI sizni firibgarlardan himoya qiladi. Buning uchun telefoningizdagi ayrim maʼlumotlarni tekshiradi.
+      Iloji bor joyda tekshiruv telefonning oʻzida bajariladi. Maʼlumotlaringiz sotilmaydi, ilovada reklama ham yoʻq.</p>
+
+    <h2>Nimalarni va nima uchun tekshiramiz</h2>
+    <ul>
+      <li><b>SMS xabarlar.</b> Kelgan SMS va qutidagi xabarlar firibgar havola va kod soʻrovlari uchun telefonda tekshiriladi.
+        Faqat shubhali matn ikkinchi fikr uchun shifrlangan aloqa orqali Ogoh serveridagi AI tahliliga yuboriladi va saqlanmaydi.
+        Ogoh oʻzi SMS yubormaydi.</li>
+      <li><b>Telegram.</b> Bildirishnomalardan faqat Telegram xabarlari oʻqiladi. Hisobingizni ulasangiz, Ogoh xabarlarni faqat
+        oʻqiydi, sizning nomingizdan hech narsa yubormaydi. Sessiya telefonda shifrlangan holda turadi.</li>
+      <li><b>Qoʻngʻiroqlar.</b> Notanish raqam qoʻngʻiroq qilganda ogohlantiramiz. Siz yoqsangiz, Ogoh suhbat boʻlaklarini
+        tahlil qiladi. Ovoz yozib olinmaydi: har bir boʻlak tahlildan keyin oʻchiriladi.</li>
+      <li><b>Kontaktlar.</b> Faqat raqam tanish yoki notanishligini bilish uchun ishlatiladi va telefondan chiqmaydi.</li>
+      <li><b>Ilovalar va APK fayllar.</b> Zararli belgilar uchun telefonda tekshiriladi. Roʻyxat ham, fayllar ham hech qayerga
+        yuborilmaydi. Xavfli ilova yoki faylni faqat siz tasdiqlaganingizda oʻchiramiz.</li>
+      <li><b>Qoʻlda tekshiruv.</b> Siz tekshirishga bergan matn yoki ovozli xabar tahlil uchun yuboriladi va serverda saqlanmaydi. Natija telefoningizdagi tarixda qoladi.</li>
+    </ul>
+
+    <h2>Hisob (ixtiyoriy)</h2>
+    <p>Raqamingizni Telegram orqali tasdiqlasangiz, ism, rasm va ishonchli odamlar Ogoh hisobida saqlanadi. Ilovani qayta
+      oʻrnatsangiz yoki telefon almashtirsangiz, ular tiklanadi. Kod soʻz faqat telefoningizda qoladi. Tekshiruvlar tarixi
+      telefonda va sizning shaxsiy Google zaxira nusxangizda saqlanadi. Hisobni istalgan vaqt oʻchirishingiz mumkin.</p>
+
+    <h2>Anonim statistika</h2>
+    <p>Ilovani yaxshilash va AI xatolarini topish uchun anonim foydalanish statistikasi yuboriladi: telefon modeli va
+      taxminiy shahar bilan, ism va xabarlarsiz. Buni istalgan vaqt Sozlamalardan oʻchirish mumkin.</p>
+
+    <h2>Ruxsatlar</h2>
+    <p>Har bir ruxsatni siz oʻzingiz, tushuntirishni oʻqib yoqasiz. Ruxsat bermasangiz, faqat oʻsha himoya ishlamaydi.</p>
+
+    <h2>Uchinchi tomonlar</h2>
+    <p>Maʼlumotlaringizni sotmaymiz va reklama uchun bermaymiz. Ilovada reklama va boshqa kompaniyalarning kuzatuv kodlari yoʻq.</p>
+
+    <h2>Bogʻlanish</h2>
+    <p>Savol va soʻrovlar uchun: Telegram <a href="https://t.me/ogoh_ai_bot">@ogoh_ai_bot</a>.</p>
+  </article>
+
+  <article data-lang="ru" lang="ru">
+    <h1>Политика конфиденциальности</h1>
+    <p class="date">Действует с 25 октября 2026 года</p>
+    <p class="lead">Ogoh AI защищает вас от мошенников и для этого проверяет некоторые данные на телефоне. Где возможно,
+      проверка идёт на самом телефоне. Мы не продаём ваши данные, рекламы в приложении нет.</p>
+
+    <h2>Что и зачем мы проверяем</h2>
+    <ul>
+      <li><b>SMS.</b> Входящие SMS и сообщения в папке проверяются на телефоне на мошеннические ссылки и запросы кодов.
+        Только подозрительный текст отправляется по защищённому соединению на AI-анализ через сервер Ogoh и не хранится.
+        Ogoh сам SMS не отправляет.</li>
+      <li><b>Telegram.</b> Из уведомлений читаются только сообщения Telegram. Если вы подключите аккаунт, Ogoh только читает
+        сообщения и ничего не отправляет от вашего имени. Сессия хранится на телефоне в зашифрованном виде.</li>
+      <li><b>Звонки.</b> Мы предупреждаем, когда звонит незнакомый номер. Если вы включите эту функцию, Ogoh анализирует
+        фрагменты разговора. Звонок не записывается: каждый фрагмент удаляется после анализа.</li>
+      <li><b>Контакты.</b> Используются только чтобы понять, знаком ли номер, и не покидают телефон.</li>
+      <li><b>Приложения и APK-файлы.</b> Проверяются на телефоне на признаки вредоносности. Ни список, ни файлы никуда не
+        отправляются. Опасное приложение или файл удаляются только с вашего подтверждения.</li>
+      <li><b>Ручная проверка.</b> Текст или голосовое сообщение, которые вы даёте на проверку, отправляются на анализ и не
+        хранятся на сервере. Результат остаётся в истории на телефоне.</li>
+    </ul>
+
+    <h2>Аккаунт (по желанию)</h2>
+    <p>Если вы подтвердите номер через Telegram, имя, фото и доверенные люди сохраняются в аккаунте Ogoh и восстанавливаются
+      после переустановки или смены телефона. Кодовое слово остаётся только на телефоне. История проверок хранится на телефоне
+      и в вашей личной резервной копии Google. Аккаунт можно удалить в любой момент.</p>
+
+    <h2>Анонимная статистика</h2>
+    <p>Чтобы улучшать приложение и находить ошибки AI, отправляется анонимная статистика использования: модель телефона и
+      примерный город, без имени и сообщений. Её можно отключить в Настройках.</p>
+
+    <h2>Разрешения</h2>
+    <p>Каждое разрешение вы включаете сами, после пояснения в приложении. Без разрешения не работает только связанная с ним
+      защита.</p>
+
+    <h2>Третьи стороны</h2>
+    <p>Мы не продаём ваши данные и не передаём их для рекламы. В приложении нет рекламы и трекеров других компаний.</p>
+
+    <h2>Связь</h2>
+    <p>Вопросы и запросы: Telegram <a href="https://t.me/ogoh_ai_bot">@ogoh_ai_bot</a>.</p>
+  </article>
+
+  <article data-lang="en" lang="en">
+    <h1>Privacy policy</h1>
+    <p class="date">Effective 25 October 2026</p>
+    <p class="lead">Ogoh AI protects you from scammers, and to do that it checks some data on your phone. Wherever possible
+      the check runs on the phone itself. We do not sell your data, and the app has no ads.</p>
+
+    <h2>What we check and why</h2>
+    <ul>
+      <li><b>SMS.</b> Incoming SMS and messages in the inbox are checked on the phone for scam links and code requests. Only a
+        suspicious text is sent over an encrypted connection for AI analysis through the Ogoh server, and it is not stored.
+        Ogoh never sends SMS.</li>
+      <li><b>Telegram.</b> Of all notifications, only Telegram messages are read. If you link your account, Ogoh only reads
+        messages and never sends anything in your name. The session stays encrypted on the phone.</li>
+      <li><b>Calls.</b> We warn you when an unknown number calls. If you turn the feature on, Ogoh analyses fragments of the
+        conversation. Calls are not recorded: each fragment is deleted after analysis.</li>
+      <li><b>Contacts.</b> Used only to tell known numbers from unknown ones, and they never leave the phone.</li>
+      <li><b>Apps and APK files.</b> Checked on the phone for malicious traits. Neither the list nor the files are sent
+        anywhere. A dangerous app or file is removed only after you confirm.</li>
+      <li><b>Manual check.</b> A text or voice message you give Ogoh to check is sent for analysis and not kept on the server. The result stays in the history on your phone.</li>
+    </ul>
+
+    <h2>Account (optional)</h2>
+    <p>If you confirm your number through Telegram, your name, photo and trusted people are kept in your Ogoh account, so
+      they come back after a reinstall or a new phone. The code word stays on your phone only. Check history is kept on the
+      phone and in your personal Google backup. You can delete the account at any time.</p>
+
+    <h2>Anonymous statistics</h2>
+    <p>To improve the app and find AI mistakes, anonymous usage statistics are sent: the phone model and an approximate city,
+      with no name and no messages. You can turn this off in Settings.</p>
+
+    <h2>Permissions</h2>
+    <p>You turn on each permission yourself, after an explanation in the app. Without a permission, only the protection that
+      needs it stops working.</p>
+
+    <h2>Third parties</h2>
+    <p>We do not sell your data or share it for advertising. The app contains no ads and no third-party trackers.</p>
+
+    <h2>Contact</h2>
+    <p>Questions and requests: Telegram <a href="https://t.me/ogoh_ai_bot">@ogoh_ai_bot</a>.</p>
+  </article>
+</div>
+<script>
+  (function () {
+    var langs = ['uz', 'ru', 'en'];
+    function set(l) {
+      if (langs.indexOf(l) < 0) l = 'uz';
+      document.documentElement.lang = l;
+      document.querySelectorAll('[data-lang]').forEach(function (a) { a.classList.toggle('on', a.dataset.lang === l); });
+      document.querySelectorAll('[data-set]').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.set === l); });
+      try { history.replaceState(null, '', '?lang=' + l); } catch (e) {}
+    }
+    document.querySelectorAll('[data-set]').forEach(function (b) { b.addEventListener('click', function () { set(b.dataset.set); }); });
+    var q = new URLSearchParams(location.search).get('lang');
+    var nav = (navigator.language || '').slice(0, 2);
+    set(q || (nav === 'ru' ? 'ru' : nav === 'en' ? 'en' : 'uz'));
+  })();
+</script>
+</body>
+</html>
