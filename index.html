@@ -110,6 +110,18 @@
   .family p{margin-top:6px;font-size:15px;line-height:1.5;color:rgba(255,255,255,.82)}
   .family blockquote{margin:0;padding-top:16px;border-top:1px solid rgba(255,255,255,.2);font-size:20px;line-height:1.3;font-weight:700;letter-spacing:-.01em}
 
+  /* Windows */
+  .win-get{margin-top:12px;padding:22px 20px 24px;display:grid;gap:16px}
+  .win-get .who{display:flex;align-items:center;gap:14px}
+  .win-get .who img{width:40px;height:40px;flex:none}
+  .win-get .who b{display:block;font-size:19px;font-weight:700;letter-spacing:-.01em}
+  .win-get .who span.m{display:block;margin-top:2px;font-size:14px;color:var(--muted)}
+  .win-get .btn img{width:20px;height:20px;filter:brightness(0) invert(1)}
+  .win-note{margin:0;font-size:14px;line-height:1.5;color:var(--muted)}
+  .win-note code{display:block;margin-top:8px;font-family:ui-monospace,Consolas,monospace;font-size:12px;line-height:1.45;word-break:break-all;opacity:.75}
+  .pc-link{display:inline-flex;align-items:center;gap:8px;margin-top:14px;font-size:15px;font-weight:600;color:var(--brand)}
+  .pc-link img{width:16px;height:16px}
+
   /* What Ogoh catches */
   .catch{margin-top:12px;padding:6px 0}
   .catch-head{display:flex;align-items:center;justify-content:space-between;padding:12px 18px 6px;font-size:14px;font-weight:600;color:var(--muted)}
@@ -318,6 +330,7 @@
           <div class="qr-mini"><img src="qr.png" alt="" width="64" height="64"><span><span class="uz">Telefon kamerasi bilan skanerlang</span><span class="ru">Отсканируйте камерой телефона</span></span></div>
         </div>
         <p class="meta" data-meta><span class="uz">Android 8.0+ · Bepul</span><span class="ru">Android 8.0+ · Бесплатно</span></p>
+        <a class="pc-link" href="#windows"><img src="logos/windows.svg" alt="" width="16" height="16"><span class="uz">Kompyuter uchun: Windows</span><span class="ru">Для компьютера: Windows</span></a>
       </div>
       <div class="phone-stage">
         <div class="phone">
@@ -433,6 +446,43 @@
         <li class="step"><span class="num">2</span><div><b><span class="uz">Telefonda tekshiriladi</span><span class="ru">Проверка на телефоне</span></b><p><span class="uz">Oʻzbek tilidagi qoidalar internetsiz ishlaydi, shubhali qismini Ogoh AI tahlil qiladi.</span><span class="ru">Правила на узбекском работают без интернета, подозрительную часть разбирает Ogoh AI.</span></p></div></li>
         <li class="step"><span class="num">3</span><div><b><span class="uz">Darhol ogohlantiradi</span><span class="ru">Сразу предупреждает</span></b><p><span class="uz">Toʻliq ekranli ogohlantirish va bankka bir bosishda qoʻngʻiroq.</span><span class="ru">Полноэкранное предупреждение и звонок в банк в одно касание.</span></p></div></li>
       </ol>
+    </div>
+  </section>
+
+  <section class="band" id="windows">
+    <div class="wrap">
+      <div class="head" data-reveal>
+        <span class="eyebrow"><span class="uz">Kompyuter uchun</span><span class="ru">Для компьютера</span></span>
+        <h2><span class="uz">Kompyuterda ham himoya</span><span class="ru">Защита и на компьютере</span></h2>
+        <p class="sub"><span class="uz">Windows uchun Ogoh AI telefondagi bilan bir xil qoidalar va Ogoh AI bilan ishlaydi.</span><span class="ru">Ogoh AI для Windows работает на тех же правилах и с тем же Ogoh AI, что и на телефоне.</span></p>
+      </div>
+      <div class="grid4">
+        <article class="card feat" data-reveal>
+          <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg></div>
+          <h3><span class="uz">Bufer</span><span class="ru">Буфер обмена</span></h3>
+          <p><span class="uz">Nusxa olingan xabar va havolani darhol tekshiradi.</span><span class="ru">Сразу проверяет скопированные сообщения и ссылки.</span></p>
+        </article>
+        <article class="card feat" data-reveal style="--d:60ms">
+          <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg></div>
+          <h3><span class="uz">Yuklamalar</span><span class="ru">Загрузки</span></h3>
+          <p><span class="uz">Faylni ochilishidan oldin oʻqiydi: «.pdf.exe», APK, parolli arxiv.</span><span class="ru">Читает файл до открытия: «.pdf.exe», APK, архив с паролем.</span></p>
+        </article>
+        <article class="card feat" data-reveal>
+          <div class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 3h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z"/><path d="M8 21h8"/><path d="M12 17v4"/></svg></div>
+          <h3><span class="uz">Masofaviy boshqaruv</span><span class="ru">Удалённый доступ</span></h3>
+          <p><span class="uz">AnyDesk yoki TeamViewer ishga tushsa ogohlantiradi.</span><span class="ru">Предупреждает, когда запускается AnyDesk или TeamViewer.</span></p>
+        </article>
+        <article class="card feat" data-reveal style="--d:60ms">
+          <div class="tile"><img src="logos/telegram.svg" alt="" width="24" height="24"></div>
+          <h3>Telegram</h3>
+          <p><span class="uz">Akkaunt orqali kelgan xabar va fayllarni tekshiradi.</span><span class="ru">Проверяет сообщения и файлы, пришедшие в аккаунт.</span></p>
+        </article>
+      </div>
+      <div class="card win-get" data-reveal>
+        <div class="who"><img src="logos/windows.svg" alt="Windows" width="40" height="40"><div><b>Ogoh AI for Windows</b><span class="m"><span class="uz">Windows 10/11 · 64-bit · 87,7 MB · Bepul</span><span class="ru">Windows 10/11 · 64-bit · 87,7 МБ · Бесплатно</span></span></div></div>
+        <a class="btn" href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases/download/windows-v1.0.0/Ogoh-AI-1.0.0-Windows.exe"><img src="logos/windows.svg" alt="" width="20" height="20"><span class="uz">Windows uchun yuklab olish</span><span class="ru">Скачать для Windows</span></a>
+        <p class="win-note"><span class="uz">Windows birinchi ochishda «Kompyuteringiz himoyalandi» oynasini koʻrsatsa: «Batafsil» → «Baribir ishga tushirish».</span><span class="ru">Если при первом запуске Windows покажет «Система Windows защитила ваш компьютер»: «Подробнее» → «Выполнить в любом случае».</span><code>SHA-256 e946152f41ca0c5316965118d77efd36eacd27cde83555f0f051951e365a115f</code></p>
+      </div>
     </div>
   </section>
 
@@ -579,6 +629,7 @@
         <p class="sub"><span class="uz">Bepul. Yangilanishlar ilovaning oʻzida keladi.</span><span class="ru">Бесплатно. Обновления приходят внутри приложения.</span></p>
         <a class="btn white" id="final-cta" href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases/latest/download/ogoh-ai.apk"><svg class="droid" aria-hidden="true"><use href="#droid"/></svg><span class="uz">Android uchun yuklab olish</span><span class="ru">Скачать для Android</span></a>
         <p class="meta" data-meta><span class="uz">Android 8.0+ · Bepul</span><span class="ru">Android 8.0+ · Бесплатно</span></p>
+        <a class="pc-link" href="#windows"><img src="logos/windows.svg" alt="" width="16" height="16"><span class="uz">Kompyuter uchun: Windows</span><span class="ru">Для компьютера: Windows</span></a>
         <div class="links">
           <a href="https://github.com/JAVOHIR120/ogoh-ai-releases/releases"><span class="uz">Barcha versiyalar</span><span class="ru">Все версии</span></a>
           <a href="https://t.me/ogoh_ai_bot"><img src="logos/telegram.svg" alt="" width="18" height="18"><span class="uz">Telegram bot</span><span class="ru">Telegram-бот</span></a>
